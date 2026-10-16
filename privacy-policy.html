@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hifazat Block — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #0b1210;
+    --text: #e8f0ec;
+    --text-dim: #9db3ab;
+    --accent: #22c55e;
+    --card: #131f1b;
+    --border: #22332c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 20px 60px;
+    line-height: 1.6;
+  }
+  h1 { font-size: 24px; margin-bottom: 4px; }
+  .updated { color: var(--text-dim); font-size: 13px; margin-bottom: 28px; }
+  h2 { font-size: 17px; margin: 28px 0 10px; color: var(--accent); }
+  p, li { font-size: 14.5px; color: var(--text); }
+  ul { padding-left: 20px; margin-bottom: 10px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 16px 0;
+  }
+  a { color: var(--accent); }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f4f7f5;
+      --text: #10231a;
+      --text-dim: #5b6b63;
+      --card: #ffffff;
+      --border: #dfe7e2;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Hifazat Block</h1>
+<p class="updated">Last updated: October 2026</p>
+
+<p>Hifazat Block is a free, self-control app for Android. This page explains what the app does on your device and what, if anything, leaves it.</p>
+
+<h2>The short version</h2>
+<div class="card">
+  <p><b>Hifazat Block does not collect, store, or transmit your personal data to us or to any third party.</b> Everything the app does — blocking apps, filtering content, tracking usage limits — happens locally on your phone. We do not operate a server that receives your browsing history, app usage, or any content from your device.</p>
+</div>
+
+<h2>Permissions the app asks for, and why</h2>
+<ul>
+  <li><b>Accessibility Service</b> — used to detect which app is currently open (so blocking rules can apply) and to scan on-screen text for adult-content keywords when that feature is turned on. This scanning happens entirely on your device; nothing is sent anywhere.</li>
+  <li><b>Device Admin</b> — used only to prevent the app itself from being disabled or the Accessibility Service from being silently killed while you have an active block running (apps blocked, usage limit, schedule, focus session, or adult-content filter).</li>
+  <li><b>VPN Service</b> — used to route DNS lookups through a content-filtering DNS resolver (Cloudflare's "DNS for Families") when adult-content blocking is active. This is a local, on-device VPN tunnel used only for DNS filtering — it does not route or inspect your general internet traffic, and we do not see or log the sites you visit.</li>
+  <li><b>Usage Access / PACKAGE_USAGE_STATS</b> — used to measure how long you've used each app, for the app usage limit feature.</li>
+  <li><b>Display over other apps (SYSTEM_ALERT_WINDOW)</b> — used to show the blocking screen when a limited or blocked app is opened.</li>
+  <li><b>Notifications</b> — used for reminders related to your active blocks and usage limits.</li>
+</ul>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>We don't require an account, sign-up, or login.</li>
+  <li>We don't sell or share your data — we don't collect any to begin with.</li>
+  <li>We don't track your browsing history on a server.</li>
+</ul>
+
+<h2>Third-party services</h2>
+<p>The app may use ad or analytics SDKs to support the free version. If you've installed a version with ads, those third-party SDKs (not Hifazat Block itself) may collect standard advertising identifiers under their own privacy policies. We don't pass any app-usage or content-filtering data to them.</p>
+
+<h2>Uninstalling</h2>
+<p>If none of the app's blocking features are currently active, you can uninstall it at any time from Android's normal app settings — no password or special steps required. If a block is active, the app will ask you to let it finish first, with no override.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app can be sent to <a href="mailto:pponk2023@gmail.com">pponk2023@gmail.com</a>.</p>
+
+<p style="margin-top:28px;"><a href="index.html">&larr; Back to download page</a></p>
+
+</body>
+</html>
