@@ -363,7 +363,7 @@
     </a>
   </div>
   <div class="meta-row" id="metaRow" style="display:none;">
-    <span>v7.0.0 · APK</span>
+    <span id="verLabel">v9.0.0 · APK</span>
     <span>·</span>
     <span>Android 8+</span>
   </div>
@@ -479,6 +479,13 @@
       } catch (e) {}
     });
   })();
+</script>
+<script>
+// Always show the real latest release version (download link already uses /releases/latest)
+fetch("https://api.github.com/repos/zain1133604/HifazatBlock/releases/latest")
+  .then(function(r){return r.json()})
+  .then(function(d){var el=document.getElementById("verLabel");if(d&&d.tag_name&&el)el.textContent=d.tag_name+" · APK"})
+  .catch(function(){});
 </script>
 </body>
 </html>
