@@ -318,7 +318,7 @@
   </div>
 
   <noscript>
-    <a class="download-btn-noscript" href="https://github.com/zain1133604/HifazatBlock/releases/latest/download/app-release.apk" download>
+    <a class="download-btn-noscript" href="https://github.com/zain1133604/HifazatBlock/releases/download/v14.0.0/app-release.apk" download>
       ⬇ Download Hifazat Block (APK)
     </a>
   </noscript>
@@ -356,14 +356,14 @@
     <a
       id="downloadBtn"
       class="download-btn"
-      href="https://github.com/zain1133604/HifazatBlock/releases/latest/download/app-release.apk"
+      href="https://github.com/zain1133604/HifazatBlock/releases/download/v14.0.0/app-release.apk"
       download
     >
       ⬇ Download Hifazat Block
     </a>
   </div>
   <div class="meta-row" id="metaRow" style="display:none;">
-    <span id="verLabel">v9.0.0 · APK</span>
+    <span id="verLabel">v14.0.0 · APK</span>
     <span>·</span>
     <span>Android 8+</span>
   </div>
@@ -484,7 +484,7 @@
 // Always show the real latest release version (download link already uses /releases/latest)
 fetch("https://api.github.com/repos/zain1133604/HifazatBlock/releases/latest")
   .then(function(r){return r.json()})
-  .then(function(d){var el=document.getElementById("verLabel");if(d&&d.tag_name&&el)el.textContent=d.tag_name+" · APK"})
+  .then(function(d){var el=document.getElementById("verLabel");if(d&&d.tag_name&&el)el.textContent="v14.0.0 · APK"})
   .catch(function(){});
 </script>
 </body>
